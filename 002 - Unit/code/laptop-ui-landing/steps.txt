@@ -1,0 +1,11 @@
+- https://www.youtube.com/watch?v=ZeDP-rzOnAA
+
+- Load poppins font from Google Fonts (400 y 500)
+
+- Definir el font-family de la etiqueta body
+
+- Generar un reset
+
+- [Explicar Ctrl + Shift + Alt] repeat lines
+
+- [Explicar Shift + Alt] select lines
