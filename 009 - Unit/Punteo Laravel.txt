@@ -1,0 +1,7 @@
+1) https://laravel.com/docs/8.x
+2) Requisitos php, nginx (opcional), mysql, composer, etc
+3) Crear proyecto blog con composer
+4) Revisar instalador (laravel)
+5) Explicar web routes (callbacks, strings, arrays)
+6) Inclusión CSS y Javascript
+7) Creación de rutas (posts y post)
