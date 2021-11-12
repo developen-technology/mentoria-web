@@ -1,7 +1,176 @@
-1) https://laravel.com/docs/8.x
+º1) https://laravel.com/docs/8.x
 2) Requisitos php, nginx (opcional), mysql, composer, etc
 3) Crear proyecto blog con composer
 4) Revisar instalador (laravel)
 5) Explicar web routes (callbacks, strings, arrays)
 6) Inclusión CSS y Javascript
 7) Creación de rutas (posts y post)
+
+-----------------
+
+8) Externalizar archivos post (Ejemplo un directorio posts)
+9) Explicar concepto de wildcard
+10) Uso de dd y ddd
+11) Explicar routes constrains - ok
+12) Mostrar implementación de cache - ok
+13) Mostrar helper now() - ok
+14) Explicar responsabilidades de un modelo - ok
+15) Ejemplo de uso de metadata - ok
+
+https://github.com/spatie/yaml-front-matter
+Enfatizar install vs update
+
+-------------------
+
+16) Hablar un poco de las collections - ok
+17) Usar collections en el find - ok
+18) Implementar caching en all - ok
+19) Mostrar tinker: - ok
+    cache('posts.all')
+    cache()->forget('posts.all')
+    cache()->put('foo', 'bar')
+    cache()->put(['test' => 'prueba'], now()->addSeconds(3))
+
+-------------------
+
+20) Definir layout - ok
+21) Explicar sections - ok
+22) Control de errores en find - ok
+23) Hablar sobre env - ok
+
+-------------------
+
+* ejecutar en el servidor - ok
+
+24) Migrations - artisan migrate, rollback - ok
+25) Hablar de Eloquent - ok
+26) Modelo de Post y su respectiva migration - ok
+    help make:migration
+    make:model
+27) modelo post - ok
+    all
+    count
+    first
+    find
+28) Actualizaciones de Post views y Html Escaping - ok
+
+{{ }} vs {!! !!}
+
+----------------------
+
+31) Massive Assignment (vulnerabilidad) - ok
+
+create([])
+fillable
+guarded
+
+32) Routes model binding - ok
+
+---------------------------
+
+33) Agregar slug - ok
+
+- unique
+- migrate:fresh ** (desarrollo) **
+- route vs RouteKeyName
+
+34) Crear categoria - ok
+
+- make:model ... -m
+
+35) Hablar de la relationships
+
+- metodo vs propiedad
+- Agregar link con categoria a la vista
+
+36) Crear una ruta que permita mostrar todos los posts de una categoria determinada   ok
+
+- trabajo que carguen los posts utilizando el slug
+
+37) Hablar sobre performance de consultas anidadas
+
+- Logging consultas - ok
+- Comentar sobre lazing load - ok
+- Mostrar clockwork - ok
+
+38) Seeds
+
+- Crear campo autor - ok
+- Mostrar db:seed (Hablar de la duplicación) - ok
+- unique en categorias - ok
+- migrate:fresh --seed - ok
+- Crear relaciones con user (post, user) - ok
+- Modificar vista - ok
+
+39) Factories
+
+- Test metodo create de factory (user) - ok
+- Crear factory para post y category - ok
+- Actualizar nuestro seeder - ok
+- Merge no fake data - ok
+
+40) Ruta para ver post relacionados a un autor
+
+- Modificar orden de listado - ok
+- Ajustar nomenclatura de la relation - ok
+- Crear ruta y modificar vistas
+- Crear username para users, y asi modificar la url (migrate:fresh --seed)
+- Revisar eager Load agregando post a alguna categoria (load)
+
+41) Implementar diseño
+
+- Descargar template - ok
+- Imagenes al directorio público - ok
+- Cargar el layout (hablar de tailwind, imagenes, etc) - ok
+
+42) Continuación Diseño
+
+- Blade components (directorio), hacer un test con un raw layout - ok
+- Crear un component para los posts - ok
+- Mostrar ejemplo de render partial - ok
+- Paso de variables a componentes y definición de props - ok
+
+43) Continuación Diseño
+
+- Dejar dinamico el componente de los post normales - ok
+- Usar los componentes en el grid - ok
+- Revisar posibles validaciones - ok
+- Mostrar merge attributes - ok
+- Hablar de la variable loop - ok
+- Crear componente para el grid - ok
+- Modificar template del post - ok
+- Podriamos crear un widget para las categorias (category-button.blade.php), trabajo online - ok
+
+44) Implementar Filtro de categoria
+
+- Hacer dinamico el select modificar vista y ruta - ok
+- Implementar un dropdown alpine.js (https://alpinejs.dev/) - ok
+- Experimentar con las clases de tailwind web
+- Experimentar con las clases de tailwind mobile (por ejemplo mostrar el truco del background color)
+- Dar feedback en el dropdown - ok
+- Crear un link para ver todas las categorias - ok
+
+45) Separar filtro en un componente - ok
+
+- Crear componente (dropdown por ejemplo)
+- Usar slot por defecto
+- Y crear un slot para el trigger del evento
+
+- Crear componente para los items (dropdown-item?)
+- Revisar named routes
+- Crear componente para los svg
+
+46) Implementar Search y MVC - ok
+
+47) Filtering - ok
+
+- Implementar busqueda por category
+- Implementar busqueda con exists o join
+- Cambiar enlaces del componente dropdown-item
+
+48) Paginación
+
+- Examinar collection
+- Mostrar paginador en la vista
+- Mostrar localization - https://laravel.com/docs/8.x/localization
+
