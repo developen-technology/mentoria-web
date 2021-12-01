@@ -170,7 +170,34 @@ guarded
 
 48) Paginación
 
-- Examinar collection
-- Mostrar paginador en la vista
-- Mostrar localization - https://laravel.com/docs/8.x/localization
+- Examinar collection - ok
+- Mostrar paginador en la vista - ok
+- Mostrar localization - https://laravel.com/docs/8.x/localization - ok
+
+49) Chat con Pusher
+
+50) Broadcasting Laravel Echo
+
+- Crear proyecto e instalar dependencias de frontend
+- Habilitar boradcasting provider
+- Revisar rutas cargadas por el provider
+- Revisar la configuracion del broadcasting
+- Crear evento OrderStatusUpdate
+- Registrar un channel, por ejemplo orders
+- Dispatch el evento en la ruta home, usar metodo y no helper
+- Configurar datos de pusher en el proyecto
+- Instalar dependencias:
+
+    > composer require pusher/pusher-php-server --with-all-dependencies
+    > npm install --save laravel-echo pusher-js
+
+- Usar el debug console de pusher
+- Simular una orden
+
+
+
+
+
+
+
 
